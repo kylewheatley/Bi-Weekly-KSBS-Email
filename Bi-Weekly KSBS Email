@@ -7,7 +7,7 @@ function sendDistrictEmails() {
   const emailTemplateA = `
 Greetings [district commander] and [SAL district commander],
 
-As of [date], we currently have [delegates] signed up to attend the 2025 Session of Boys State from your district.
+As of [date], we currently have [delegates] signed up to attend the 2025 Session of Boys State from your district. 
 
 As a reminder:
 - There is no maximum number of delegates a post or school can send.
@@ -84,7 +84,7 @@ The American Legion Boys State of Kansas
   // Send Email A to District Commanders
   for (let i = 1; i < data.length; i++) { // Skip header row
     const district = data[i][0];
-    const delegates = data[i][1];
+    const delegates = data[i][1] || 0; // Default to 0 if no delegates exist
     const additionalInfo = data[i][2] || "N/A";
 
     const [commander, salCommander] = districtContacts[district] || ["None", "None"];
