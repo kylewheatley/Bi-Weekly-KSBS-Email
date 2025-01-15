@@ -33,7 +33,7 @@ The American Legion Boys State of Kansas
   const emailTemplateB = `
 Greetings [department commander] and [detachment commander],
 
-Below you will find a breakdown of the number of delegates per District for the 2025 Session of Boys State:
+Below you will find a breakdown of the number of delegates per District for the 2025 Session of Boys State (District 0 is for Out-of-State Delegates):
 
 [table]
 
